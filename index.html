@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("C:\\Users\\HP\\OneDrive\\Desktop\\bahubali_2_.jpg");
+            background-position: center;
+        }
+
+        .registration{
+            font-size: 35px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .form {
+            border: 3px black solid;
+            width: 800px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            font-size:25px;
+            gap: 50px;
+            border-radius: 20px;
+            padding: 30px 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        label{
+            font-weight: bold;
+        }
+
+        .filling_space {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            width: 800px;
+        }
+        .first_name, .lastname, .company_name ,.email ,.mono, .date ,.month, .color{
+            /* border: 2px black solid; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+        .input, .calender,.month_name{
+            height: 30px;
+            width:200px;
+            padding: 3px 10px;
+            font-size: 17px;
+            border: 3px rgba(128, 128, 128, 0.704) solid;
+            border-radius: 7px;
+            font-weight: 550;
+            background: none;
+        }
+        .address{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        textarea{
+            width: 500px;
+            height: 200px;
+            padding: 10px;
+            font-size: 17px;
+            font-weight: 550;
+            border-radius: 10px;
+            border: 3px rgba(128, 128, 128, 0.637) solid;
+        }
+
+        button{
+            font-size: 30px;
+            padding: 15px 40px;
+            border-radius: 10px;
+            background-color: rgb(41, 203, 41);
+            border: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="form">
+        <div class="registration">REGISTRATION FORM</div>
+        <div class="filling_space">
+            <div class="first_name">
+                <label>First Name:</label>
+                <div><input type="text" class="input" placeholder="First Name" required></div>
+            </div>
+            <div class="lastname">
+                <label>Last Name:</label>
+                <div><input type="text" class="input" placeholder="Last Name" required></div>
+            </div>
+            <div class="company_name">
+                <label>Company Name:</label>
+                <div><input type="text" class="input" value="Company Sample" readonly></div>
+            </div>
+            <div class="email">
+                <label>Email</label>
+                <div><input type="email" class="input" placeholder="xyz@gmail.com" required></div>
+            </div>
+            <div class="mono">
+                <label>Mobile number:</label>
+                <div><input type="number" class="input" value="91" maxlength="12" required></div>
+            </div>
+            <div class="languages" style="display: flex; flex-direction: column; gap: 10px;">
+                <label>Languages Known:</label>
+                <div class="courses" style="display: flex; flex-direction: row; gap: 20px;">
+                    <div><input type="checkbox"> HTML </div>
+                    <div><input type="checkbox"> CSS </div>
+                    <div><input type="checkbox"> REACT JS </div>
+                    <div><input type="checkbox"> NODE JS </div>
+                    <div><input type="checkbox"> EXPERT JS </div>
+                </div>
+            </div>
+            <div class="gender" style="display: flex; flex-direction: column; gap: 10px;">
+                <label>GENDER:</label>
+                <div class="gender_types" style="display: flex; flex-direction: row; gap: 20px;">
+                    <div><input type="radio" name="gender"> MALE </div>
+                    <div><input type="radio" name="gender"> FEMALE </div>
+                    <div><input type="radio" name="gender"> OTHERS </div>
+                </div>
+            </div>
+            <div class="date">
+                <label>DATE of BIRTH:</label>
+                <div><input type="date" class="calender"></div>
+            </div>
+            <div class="month">
+                <label>MONTH</label>
+                <div><select class="month_name">
+                        <option value="NONE"></option>
+                        <option value="JANUARY">JANUARY</option>
+                        <option value="FEBRUARY">FEBRUARY</option>
+                        <option value="MARCH">MARCH</option>
+                        <option value="APRIL">APRIL</option>
+                        <option value="MAY">MAY</option>
+                        <option value="JUNE">JUNE</option>
+                        <option value="JULY">JULY</option>
+                        <option value="AUGEST">AUGEST</option>
+                        <option value="SEPTEMBER">SEPTEMBER</option>
+                        <option value="OCTOBER">OCTOBER</option>
+                        <option value="NOVEMBER">NOVEMBER</option>
+                        <option value="DECEMBER">DECEMBER</option>
+                    </select></div>
+            </div>
+            <div class="address">
+                <label>ADDRESS:</label>
+                <div><textarea name="" id="" cols="30" rows="10" placeholder="type your address"></textarea></div>
+            </div>
+            <div class="color">
+                <label>COLOR:</label>
+                <div><input type="color"></div>
+            </div>
+        </div>
+        <button type="submit">SUBMIT</button>
+
+
+
+
+
+        
+    </form>
+</body>
+
+</html>
